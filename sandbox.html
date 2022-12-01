@@ -12,7 +12,7 @@
     <title>Sandbox</title>
 </head>
 <body>
-    <h1>Sandobox</h1>
+    <h1>Parse sandbox</h1>
 
     <button id="test" onclick="testparse()">TEST</button>
 </body>
@@ -23,7 +23,29 @@
 
   function testparse(){
 
-    alert("parse testing! ")
+    //alert("parse testing! ")
+
+    async function saveNewPlayer() {
+  //Create your Parse Object
+  const newPerson = new Parse.Object('People');
+  //Define its attributes
+  newPerson.set('name', 'Francisco');
+  newPerson.set('yearOfBirth', 1975);
+  newPerson.set('emailContact', 'paco@csedge.org');
+  
+  try {
+    //Save the Object
+    const result = await newPerson.save();
+    alert('New object created with objectId: ' + result.id);
+  } catch (error) {
+    alert('Failed to create new object: ' + error.message);
+  }
+}
+
+
+
+
+
   }
 
 </script>
