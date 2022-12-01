@@ -12,7 +12,7 @@
     <title>Sandbox</title>
 </head>
 <body>
-    <h1>Parse sandbox</h1>
+    <h1>Parse sandbox 10</h1>
 
     <button id="test" onclick="testparse()">TEST</button>
 </body>
@@ -29,6 +29,7 @@
   //Create your Parse Object
   const newPerson = new Parse.Object('People');
   //Define its attributes
+ 
   newPerson.set('name', 'Francisco');
   newPerson.set('yearOfBirth', 1975);
   newPerson.set('emailContact', 'paco@csedge.org');
@@ -36,14 +37,16 @@
   try {
     //Save the Object
     const result = await newPerson.save();
+    console.log("try: save player")
     alert('New object created with objectId: ' + result.id);
     console.log('New object created with objectId: ' + result.id)
   } catch (error) {
     alert('Failed to create new object: ' + error.message);
     console.log("Failed to create new object: " + error.message)
   }
-}
 
+}
+console.log("Done...")
 
 }
 
