@@ -24,7 +24,7 @@
   function testparse(){
 
     //alert("parse testing! ")
-
+    console.log("parsing...")
     async function saveNewPlayer() {
   //Create your Parse Object
   const newPerson = new Parse.Object('People');
@@ -37,16 +37,15 @@
     //Save the Object
     const result = await newPerson.save();
     alert('New object created with objectId: ' + result.id);
+    console.log('New object created with objectId: ' + result.id)
   } catch (error) {
     alert('Failed to create new object: ' + error.message);
+    console.log("Failed to create new object: " + error.message)
   }
 }
 
 
-
-
-
-  }
+}
 
 </script>
 </html>
