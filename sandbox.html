@@ -12,20 +12,17 @@
     <title>Sandbox</title>
 </head>
 <body>
-    <h1>Parse sandbox 10</h1>
+    <h1>Parse sandbox 11</h1>
 
-    <button id="test" onclick="testparse()">TEST</button>
+    <button id="test" onclick="savePerson()">TEST</button>
 </body>
 
 <script>
    
   // let testParse = document.querySelector("#test")
 
-  function testparse(){
-
-    //alert("parse testing! ")
-    console.log("parsing...")
-    async function saveNewPlayer() {
+  
+    async function savePerson() {
   //Create your Parse Object
   const newPerson = new Parse.Object('People');
   //Define its attributes
@@ -46,9 +43,9 @@
   }
 
 }
-console.log("Done...")
 
-}
+
+
 
 </script>
 </html>
