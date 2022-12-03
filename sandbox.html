@@ -92,6 +92,8 @@ async function saveHuman() {
        let alert = document.querySelector("#alert-msg")
        alert.insertAdjacentHTML("beforeend",successMsg)
 
+       display_all_persons()
+
   } catch (error) {
    // alert('Failed to create new object: ' + error.message);
     console.log("Failed to create new object: " + error.message)
