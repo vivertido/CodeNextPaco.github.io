@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+
+    margin:0;
+    padding:0;
+    background-color: rgb(10,10,10);
+    color: rgb(240,240,240);
+
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:  'Quicksand', sans-serif;
+    
+    width:100vw ;
+}
+
+
+header{
+
+    width:95%;
+    max-width: 788px; /* prevent from getting too big */
+    display:flex;
+    justify-content: flex-end;
+    padding:12px;
+    margin-top:15px;
+}
+.share-btn{
+
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+    background-color: rgb(240,240,240);
+
+     
+}
+
+.share-btn svg{
+
+    margin:6px;
+}
+
+.container{
+
+    width:90%;
+    max-width: 680px;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.album-card{
+
+    height: auto;
+    width: 100%;
+    background-color: rgb(116, 116, 116);
+    margin:7px;
+    border-radius: 17px;
+    padding:20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.album-card:hover{
+    background-color: rgb(161, 160, 160);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4;
+    transform: scale(1.02);
+
+}
+.album-title{
+
+    color:aqua;
+    font-size:medium;
+}
+.album-info{
+
+    width:max-content;
+}
+
+.row{
+
+    width:100%;
+}
+
+.video-container{
+
+    display: flex;
+    flex-direction: row;
+    min-height:200px;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(104, 102, 102);
+    background-color: aqua;
+    border-radius: 20px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+a:hover{
+    background-color: rgb(60,60,60);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4;
+    transform: scale(1.02);
+    color:aliceblue;
+}
+
+.img-container{
+
+    margin-top:40px;
+    height:96px;
+    width:96px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+.img-container img{
+
+    height:100%;
+}
+
+
+.icon{
+
+    width: 44px;
+    height: 44px;
+
+}
+
+.icon svg{
+
+    margin:12px;
+}
+
+.tile:hover{
+    background-color: rgb(60,60,60);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4;
+    transform: scale(1.02);
+
+}

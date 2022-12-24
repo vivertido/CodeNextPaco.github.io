@@ -110,7 +110,8 @@
 
     console.log(searchTermFormatted)
 
-    let response = await fetch(`https://itunes.apple.com/search?term=${searchTermFormatted}`)
+    //let response = await fetch(`https://itunes.apple.com/search?term=${searchTermFormatted}&media=musicVideo`)
+    let response = await fetch(`https://itunes.apple.com/search?term=${searchTermFormatted}&media=music`)
 
     let data = await response.json()
 
